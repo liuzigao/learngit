@@ -1,6 +1,7 @@
 liuzhigao is a worker.
 Git is a distributed control system.
 Git is a free soft.
+git checkout -b dev.
 
 Creating a new branch is quick.
 
@@ -10,3 +11,5 @@ Creating a new branch is quick.
 
 下面我们实战一下--no-ff方式的git merge：
 $ git checkout -b dev
+
+
