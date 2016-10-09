@@ -12,10 +12,7 @@ Creating a new branch is quick.
 下面我们实战一下--no-ff方式的git merge：
 $ git checkout -b dev
 
-
-<<<<<<< Updated upstream
-=======
 Git还提供了一个stash功能，可以把当前工作现场“储藏”起来，等以后恢复现场后继续工作：
 
 $ git stash
->>>>>>> Stashed changes
+
