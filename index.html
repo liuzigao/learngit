@@ -4,25 +4,52 @@
 <head>
 <meta charset="UTF-8">
 <title>现在可以输入中文了</title>
+
+<!-- Javascrip函数 -->
+<script>
+	function myfunction()
+	{
+		alert("Helle world!")
+	}
+</script>
+
 </head>
 
 <body>
+<!-- Javascript输出 -->
 
 <p>创建和使用对象方法。</p>
 <p id="demo"></p>
+
+<!-- Javascrip -->
 <script>
-// pgh
+// 定义对象
 	var person = {
-		firstName : "John",
+		firstName : "John",   //属性
 		lastName : "Doe",
 		id : 5566,
-		fullName : function()
+		fullName : function() //方法
 		{
 			return this.firstName + " " + this.lastName;
 		}
 	};
-	document.getElementById("demo").innerHTML=person.fullName();
+	document.getElementById("demo").innerHTML=person.fullName();//调用对象方法
 </script>
+
+<button onclick="myfunction()">Tty it</button>
+
+<script>
+	// 使用 innerHTML 写入到 HTML 元素。
+	// 使用 console.log() 写入到浏览器的控制台。
+	alert(5+6);  // 使用alert()弹出警告框
 	
+</script>
+
+<script>
+	document.getElementById("demo").innerHTML="如需从 JavaScript 访问某个 HTML 元素，您可以使用 document.getElementById(id) 方法。请使用 id属性来标识 HTML 元素，并 innerHTML 来获取或插入元素内容：";	//document.getElementById("demo") 是使用 id 属性来查找 HTML 元素的 JavaScript 代码 。innerHTML = "段落已修改。" 是用于修改元素的 HTML 内容(innerHTML)的 JavaScript 代码。
+	document.write(Date());        // 使用 document.write() 方法将内容写到 HTML 文档中。
+</script>
+
+
 </body>
 </html>
