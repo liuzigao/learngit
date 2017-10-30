@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrack结构</title>
+
+	<!-- 为了让 Bootstrap 开发的网站对移动设备友好，确保适当的绘制和触屏缩放，需要在网页的 head 之中添加 viewport meta 标签-->
+	<!-- width 属性控制设备的宽度。假设您的网站将被带有不同屏幕分辨率的设备浏览，那么将它设置为 device-width 可以确保它能正确呈现在不同设备上。initial-scale=1.0 确保网页加载时，以 1:1 的比例呈现，不会有任何的缩放。 -->
+    <!-- 通常情况下，maximum-scale=1.0 与 user-scalable=no 一起使用。这样禁用缩放功能后，用户只能滚动屏幕，就能让您的网站看上去更像原生应用的感觉。
+    	注意，这种方式我们并不推荐所有网站使用，还是要看您自己的情况而定！ -->
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<!-- 新 Bootstrap 核心 CSS 文件 -->
+    	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    	<!-- 可选的Bootstrap主题文件（一般不使用） -->
+    	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
+
+    	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+
+    	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    	<div class="container">
+    	    <h1>什么是 Bootstrap 网格系统（Grid System）？</h1>
+    		<div class="row">
+    			<div class="col-xs-3 ">
+    				<h4>第一列:Bootstrap 网格系统（Grid System）的工作原理</h4>
+                    <p>行必须放置在 .container class 内，以便获得适当的对齐（alignment）和内边距（padding）。</p>
+                    <p>使用行来创建列的水平组。</p>
+                    <p> 内容应该放置在列内，且唯有列可以是行的直接子元素。</p>
+                    <p> 预定义的网格类，比如 .row 和 .col-xs-4，可用于快速创建网格布局。
+                    LESS 混合类可用于更多语义布局。</p>
+    		    </div>
+
+              
+	    	    <div class="col-sm-9">
+	    	    	<h4>第二列:网格选项 - 分为四个盒子</h4>
+    	            <div class="row">
+    	                 <div class=col-sm-3 col-md-3 col-lg-3">
+    	                 	<p>超小设备手机（<768px）</p>
+    	                 </div>	
+
+    	                 <div class="col-sm-3 col-md-3 col-lg-3" >
+    	                  	<p>小型设备平板电脑（≥768px）</p>
+    	                 </div>
+
+    	            	 <div class="col-sm-3 col-md-3 col-lg-3" >
+                            <p>中型设备台式电脑（≥992px）</p>
+   	                     </div>	
+
+   	                     <div class="col-sm-3 col-md-3 col-lg-3" >
+                            <p>大型设备台式电脑（≥1200px）</p>
+   	                     </div>	
+    	            </div>
+	            </div>       
+            </div>
+	    	    <!-- 响应式图像 -->
+	    	    <!-- 通过添加 img-responsive class 可以让 Bootstrap 3 中的图像对响应式布局的支持更友好。 -->
+	    	    <img src="..." class="img-responsive" alt="响应式图像">
+        </div>
+
+        <div class="container">
+    	    <h1></h1>
+    		<div class="row">
+
+    			<div class="col-xs-3 ">
+    				<h4></h4>
+                    <p></p>
+    		    </div>
+    
+	    	    <div class="col-sm-9">
+	    	    	<h4></h4>
+    	            <div class="row">
+    	                 <div class=col-sm-3 col-md-3 col-lg-3">
+    	                 	<p></p>
+    	                 </div>	
+    	            </div>     
+    	        </div>   
+    	    </div>  
+    	</div>
+
+</body>
+
+</html>
